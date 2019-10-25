@@ -25,5 +25,47 @@ namespace UnitTest1
 			//assert(p.someMethod(a) == 1);
 			//cin.get();
 		}
+		TEST_METHOD(TestMethod2)
+		{
+			Production p;
+
+			int arrayTest[] = { 1,-1,47,1,1,1 };
+			assert(p.checkBetweenOneAnd46(arrayTest) == false);
+		}
+		TEST_METHOD(TestMethod3)
+		{
+			Production p;
+
+			int arrayTest[] = { 1,2,3,4,5,6 };
+			assert(p.checkBetweenOneAnd46(arrayTest) == true);
+		}
+		TEST_METHOD(TestMethod4)
+		{
+			Production p;
+
+			int arrayTest[] = { 1,1,1,1,1,1 };
+			assert(p.checkNoRepeats(arrayTest) == false);
+		}
+		TEST_METHOD(TestMethod5)
+		{
+			Production p;
+
+			int arrayTest[] = { 1,1,1,1,1,1 };
+			assert(p.checkNoRepeats(arrayTest) == false);
+		}
+		TEST_METHOD(TestMethod6)
+		{
+			Production p;
+
+			int arrayTest[] = { 1,2,3,4,5,5 };
+			assert(p.checkNoRepeats(arrayTest) == false);
+		}
+		TEST_METHOD(TestMethod7)
+		{
+			Production p;
+
+			int arrayTest[] = { 1,2,3,4,5,6 };
+			assert(p.checkNoRepeats(arrayTest) == true);
+		}
 	};
 }
