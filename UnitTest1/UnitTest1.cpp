@@ -43,8 +43,8 @@ namespace UnitTest1
 		{
 			Production p;
 
-			int arrayTest[] = { 1,1,1,1,1,1 };
-			assert(p.checkNoRepeats(arrayTest) == false);
+			int arrayTest[] = { 0,1,2,3,4,5 };
+			assert(p.checkNoRepeats(arrayTest) == true);
 		}
 		TEST_METHOD(TestMethod5)
 		{

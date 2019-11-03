@@ -14,6 +14,7 @@ int main()
 	bool notDone = true;
 	while (notDone)
 	{
+		cout << "Enter 6 numbers between 1 and 46" << endl;
 		notDone = false;
 		int* pointerToArray = p.getSixNumbers();
 		int array[6];
